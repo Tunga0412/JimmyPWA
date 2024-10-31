@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jimmy believes in you!">
+    <title>Jimmy's Encouragement</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #jimmy {
+            width: 200px;
+            height: auto;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <img id="jimmy" src="jimmy.jpg" alt="Jimmy">
+    <div id="message"></div>
+    <script>
+        const messages = [
+            "Jimmy thinks you can do it!",
+            "Jimmy believes in you!",
+            "Jimmy knows you’re stronger than you think!",
+            "Jimmy says, keep going!",
+            "Jimmy is cheering for you!",
+            "Jimmy knows today is your day!",
+            "Jimmy thinks you’re amazing!",
+            "Jimmy says, you've got this!",
+            "Jimmy believes in your dreams!",
+            "Jimmy thinks you’re unstoppable!",
+            "Jimmy says, one step at a time!",
+            "Jimmy knows you're capable of great things!",
+            "Jimmy is proud of you!",
+            "Jimmy says, keep shining!",
+            "Jimmy believes you’re a star!",
+            "Jimmy thinks today is full of possibilities!",
+            "Jimmy says, don’t give up!",
+            "Jimmy thinks you’re doing great!",
+            "Jimmy believes in your potential!",
+            "Jimmy says, embrace the journey!",
+            "Jimmy thinks every challenge is worth it!",
+            "Jimmy believes in your kindness!",
+            "Jimmy knows you're full of talent!",
+            "Jimmy says, progress is power!",
+            "Jimmy thinks you’ll find a way!",
+            "Jimmy believes you're resilient!",
+            "Jimmy is inspired by your efforts!",
+            "Jimmy says, smile at the world!",
+            "Jimmy thinks you’re making a difference!",
+            "Jimmy says, trust yourself!",
+            "Jimmy believes in your unique abilities!",
+            "Jimmy thinks success is around the corner!",
+            "Jimmy says, let your light shine!",
+            "Jimmy believes in the beauty of your dreams!",
+            "Jimmy knows you’re on the right path!",
+            "Jimmy thinks you're capable of greatness!",
+            "Jimmy says, one day at a time!",
+            "Jimmy is grateful for you!",
+            "Jimmy thinks you're amazing!",
+            "Jimmy says, believe in the process!",
+            "Jimmy knows you’ll reach your goals!",
+            "Jimmy says, remember to breathe!",
+            "Jimmy thinks the world needs you!",
+            "Jimmy believes in your courage!",
+            "Jimmy says, you’re more than enough!",
+            "Jimmy thinks every day is a chance to grow!",
+            "Jimmy believes you're unstoppable!",
+            "Jimmy knows you’ve got what it takes!",
+            "Jimmy says, your potential is limitless!",
+            "Jimmy thinks you can conquer anything!",
+            "Jimmy believes your hard work will pay off!",
+            "Jimmy says, keep pushing forward!",
+            "Jimmy thinks you're making strides!",
+            "Jimmy believes you’ll make it happen!",
+            "Jimmy says, stay curious!",
+            "Jimmy thinks you’re a gift to the world!",
+            "Jimmy believes in your spirit!",
+            "Jimmy says, stay strong!",
+            "Jimmy thinks kindness looks good on you!",
+            "Jimmy knows you're a fighter!",
+            "Jimmy says, enjoy the little wins!",
+            "Jimmy believes in the magic of now!",
+            "Jimmy thinks you can reach the stars!",
+            "Jimmy says, look how far you've come!",
+            "Jimmy thinks each step matters!",
+            "Jimmy believes in your power to inspire!",
+            "Jimmy knows tomorrow is bright!",
+            "Jimmy thinks you’re building something beautiful!",
+            "Jimmy says, patience is strength!",
+            "Jimmy believes in your path!",
+            "Jimmy thinks you’re destined for success!",
+            "Jimmy says, take it one step at a time!",
+            "Jimmy believes in your vision!",
+            "Jimmy says, keep learning!",
+            "Jimmy thinks you’ll surprise yourself!",
+            "Jimmy knows you’ll overcome!",
+            "Jimmy believes you have purpose!",
+            "Jimmy says, trust the journey!",
+            "Jimmy thinks growth is in every step!",
+            "Jimmy knows you’re writing your story!",
+            "Jimmy says, keep your head up!",
+            "Jimmy thinks you’re incredible!",
+            "Jimmy believes in your dreams!",
+            "Jimmy says, there’s magic in you!",
+            "Jimmy thinks you're stronger each day!",
+            "Jimmy believes you’re limitless!",
+            "Jimmy says, every moment matters!",
+            "Jimmy thinks you’re on the rise!",
+            "Jimmy believes the best is yet to come!",
+            "Jimmy says, focus on the positives!",
+            "Jimmy thinks today is a gift!"
+        ];
+
+        function getRandomMessage() {
+            return messages[Math.floor(Math.random() * messages.length)];
+        }
+
+        // Display one random message each time the app opens
+        document.getElementById("message").innerText = getRandomMessage();
+    </script>
+</body>
+</html>
